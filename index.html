@@ -305,6 +305,7 @@
             >
             <input
               type="text"
+              name="name"
               placeholder="Full Name"
               class="w-full px-5 py-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-purple-600"
             />
@@ -316,6 +317,7 @@
             >
             <input
               type="tel"
+              name="mobile"
               placeholder="+91 XXXXX XXXXX"
               class="w-full px-5 py-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-purple-600"
             />
@@ -326,6 +328,7 @@
               >Category</label
             >
             <select
+              name="category"
               class="w-full px-5 py-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-purple-600 appearance-none"
             >
               <option>Pass 10th (1 Year)</option>
@@ -1166,11 +1169,13 @@
         <form class="space-y-4">
           <input
             type="text"
+            name="name"
             placeholder="Full Name"
             class="w-full bg-slate-50 border p-5 rounded-2xl outline-none focus:ring-2 focus:ring-teal-600"
           />
           <input
             type="email"
+            name="email"
             placeholder="Email Address"
             class="w-full bg-slate-50 border p-5 rounded-2xl outline-none focus:ring-2 focus:ring-teal-600"
           />
@@ -1224,6 +1229,48 @@
             });
           }
         });
+      });
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw-rxJcP7tX8D79KhTa2jMuXsd4ijF-GL4K-PZP-vgQDfgDQGyCyE-B-s9rbTrTZOwY3A/exec";
+
+      // ---- FORM 1 (Horizontal Enquiry Form) ----
+      const enquiryForm = document.querySelector("form");
+
+      enquiryForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(enquiryForm);
+
+        fetch(scriptURL, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => {
+            alert("Enquiry Submitted Successfully!");
+            enquiryForm.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+      // ---- MODAL FORM (Checklist Form) ----
+      const modalForm = document.querySelector("#modal form");
+
+      modalForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(modalForm);
+        formData.append("type", "Checklist Download");
+
+        fetch(scriptURL, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => {
+            alert("Checklist Request Sent!");
+            modalForm.reset();
+            toggleModal();
+          })
+          .catch((error) => console.error("Error!", error.message));
       });
     </script>
   </body>
