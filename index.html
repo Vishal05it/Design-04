@@ -1,0 +1,1230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SS Coaching Lucknow | NIOS Admissions Made Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .grad-primary {
+        background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+      }
+      .grad-teal {
+        background: linear-gradient(135deg, #0d9488 0%, #2563eb 100%);
+      }
+      .hero-slide {
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+      }
+      .hero-slide.active {
+        opacity: 1;
+        z-index: 10;
+      }
+
+      .floating-btn {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .floating-btn:hover {
+        transform: translateY(-5px) scale(1.05);
+      }
+
+      .stream-card {
+        border: 1px solid #e2e8f0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .stream-card:hover {
+        transform: translateY(-10px);
+        border-color: #7c3aed;
+        box-shadow: 0 20px 25px -5px rgba(124, 58, 237, 0.1);
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+      }
+
+      @keyframes pulse-soft {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+      .animate-pulse-soft {
+        animation: pulse-soft 3s infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <!-- FLOATING CONTACT BUTTONS -->
+    <div class="fixed bottom-6 left-6 z-[100]">
+      <a
+        href="tel:+919935035316"
+        class="floating-btn flex items-center justify-center w-14 h-14 bg-slate-900 text-white rounded-full shadow-2xl"
+      >
+        <i class="fa-solid fa-phone text-xl"></i>
+      </a>
+    </div>
+
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-2">
+      <div
+        class="bg-white px-3 py-1 rounded-lg shadow-md border text-[10px] font-bold text-slate-600 animate-bounce"
+      >
+        Talk to a counsellor instantly
+      </div>
+      <a
+        href="https://wa.me/9935035316"
+        class="floating-btn flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl"
+      >
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="sticky top-0 w-full z-50 glass-effect border-b border-slate-200"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 grad-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg"
+          >
+            SS
+          </div>
+          <div>
+            <span class="text-xl font-extrabold tracking-tight text-slate-800"
+              >SS COACHING</span
+            >
+            <span
+              class="block text-[10px] text-purple-600 font-bold tracking-widest -mt-1 uppercase"
+              >Lucknow</span
+            >
+          </div>
+        </div>
+        <div
+          class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600"
+        >
+          <a href="#home" class="hover:text-purple-600 transition">Home</a>
+          <a href="#streams" class="hover:text-purple-600 transition"
+            >Streams</a
+          >
+          <a href="#why-us" class="hover:text-purple-600 transition">Why Us</a>
+          <a href="#results" class="hover:text-purple-600 transition"
+            >Results</a
+          >
+          <a
+            href="#contact"
+            class="grad-primary text-white px-6 py-3 rounded-full hover:shadow-lg transition-all"
+            >Apply Now</a
+          >
+        </div>
+        <button class="lg:hidden text-2xl">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO BANNER (4 MOTIVATIONAL PANELS) -->
+    <section id="home" class="relative h-[85vh] bg-slate-950 overflow-hidden">
+      <div id="hero-slider" class="h-full w-full">
+        <!-- Banner 1 — Hope -->
+        <div class="hero-slide active">
+          <img
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80"
+            class="w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div class="max-w-7xl mx-auto w-full text-white">
+              <span
+                class="inline-block bg-purple-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                >Hope</span
+              >
+              <h2
+                class="text-4xl md:text-6xl font-bold mb-6 max-w-3xl leading-tight"
+              >
+                “Failure is not the end — it’s the
+                <span class="text-purple-400">beginning</span> of a better
+                path.”
+              </h2>
+              <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                We help students restart education with clarity and confidence.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner 2 — Motivation -->
+        <div class="hero-slide">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80"
+            class="w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div class="max-w-7xl mx-auto w-full text-white">
+              <span
+                class="inline-block bg-teal-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                >Motivation</span
+              >
+              <h2
+                class="text-4xl md:text-6xl font-bold mb-6 max-w-3xl leading-tight"
+              >
+                “Your year is not lost — your
+                <span class="text-teal-400">direction</span> just changed.”
+              </h2>
+              <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                Choose the right NIOS stream and move forward faster.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner 3 — Understanding -->
+        <div class="hero-slide">
+          <img
+            src="https://images.unsplash.com/photo-1517245385169-46b8b23f38ef?auto=format&fit=crop&w=1920&q=80"
+            class="w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div class="max-w-7xl mx-auto w-full text-white">
+              <span
+                class="inline-block bg-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                >Understanding</span
+              >
+              <h2
+                class="text-4xl md:text-6xl font-bold mb-6 max-w-3xl leading-tight"
+              >
+                “We understand your
+                <span class="text-blue-400">situation</span> — and guide you
+                step by step.”
+              </h2>
+              <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                Personal assistance from admission to exam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner 4 — Trust -->
+        <div class="hero-slide">
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80"
+            class="w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div class="max-w-7xl mx-auto w-full text-white">
+              <span
+                class="inline-block bg-rose-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                >Trust</span
+              >
+              <h2
+                class="text-4xl md:text-6xl font-bold mb-6 max-w-3xl leading-tight"
+              >
+                “Trusted NIOS Coaching with
+                <span class="text-rose-400">Online & Offline</span> Support.”
+              </h2>
+              <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                Experienced guidance, structured preparation, real student
+                results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="absolute bottom-10 right-10 z-30 flex gap-4">
+        <button
+          onclick="prevSlide()"
+          class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          onclick="nextSlide()"
+          class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- H1 Header Content -->
+    <section class="py-16 bg-white border-b">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
+          NIOS Admissions Made Simple — Pass 10th & 12th with Confidence
+        </h1>
+        <p class="text-lg text-slate-600 max-w-4xl mx-auto mb-10">
+          A fresh start for students who failed, stopped studies, or want to
+          complete education faster. Expert NIOS admission guidance with online
+          and classroom support across India.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="#contact"
+            class="grad-primary text-white px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-all"
+            >Apply for Free Counselling</a
+          >
+          <button
+            onclick="toggleModal()"
+            class="bg-teal-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-all"
+          >
+            Download Free NIOS Admission Checklist
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORIZONTAL ENQUIRY FORM -->
+    <div class="max-w-7xl mx-auto px-6 -mt-12 relative z-40">
+      <div class="bg-white p-8 rounded-3xl shadow-2xl border border-slate-100">
+        <h2 class="text-xl font-bold text-slate-900 mb-6">
+          Start Your Admission Process Today
+        </h2>
+        <form class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+          <div class="space-y-2">
+            <label
+              class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1"
+              >Name</label
+            >
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full px-5 py-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-purple-600"
+            />
+          </div>
+          <div class="space-y-2">
+            <label
+              class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1"
+              >Mobile Number</label
+            >
+            <input
+              type="tel"
+              placeholder="+91 XXXXX XXXXX"
+              class="w-full px-5 py-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-purple-600"
+            />
+          </div>
+          <div class="space-y-2">
+            <label
+              class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1"
+              >Category</label
+            >
+            <select
+              class="w-full px-5 py-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-purple-600 appearance-none"
+            >
+              <option>Pass 10th (1 Year)</option>
+              <option>Pass 12th (1 Year)</option>
+              <option>Clear 10th (Save Year)</option>
+              <option>Clear 12th (Save Year)</option>
+              <option>Improve 10th in 45 Days</option>
+              <option>Improve 12th in 45 Days</option>
+            </select>
+          </div>
+          <button
+            class="grad-primary text-white font-bold py-4 rounded-xl shadow-lg"
+          >
+            Request Free Counselling
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- NIOS STREAMS EXPLAINED -->
+    <section id="streams" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-slate-900 mb-4">
+            Choose the Right NIOS Stream for Your Situation
+          </h2>
+          <div class="w-20 h-1 grad-primary mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Stream 1 -->
+          <div class="stream-card p-8 bg-white rounded-3xl flex flex-col">
+            <span
+              class="text-purple-600 font-bold text-xs uppercase tracking-widest mb-4"
+              >Save Time</span
+            >
+            <h3 class="text-2xl font-bold mb-4">
+              NIOS Stream 1 — Early Admission
+            </h3>
+            <div class="mb-6 space-y-2">
+              <p class="text-sm font-bold text-slate-700">Best for:</p>
+              <ul class="text-sm text-slate-500 list-disc ml-5 space-y-1">
+                <li>Students failed in 9th or 11th</li>
+                <li>Students who stopped studies after 8th or 11th</li>
+              </ul>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              Stream 1 allows students to directly prepare for 10th or 12th
+              exams under NIOS (Government of India). Suitable for early
+              starters aiming for April/May exams.
+            </p>
+            <div
+              class="mt-auto bg-purple-50 p-4 rounded-xl italic text-purple-800 text-sm"
+            >
+              “Start early, finish faster.”
+            </div>
+          </div>
+
+          <!-- Stream 2 -->
+          <div class="stream-card p-8 bg-white rounded-3xl flex flex-col">
+            <span
+              class="text-teal-600 font-bold text-xs uppercase tracking-widest mb-4"
+              >Save a Year</span
+            >
+            <h3 class="text-2xl font-bold mb-4">NIOS Stream 2</h3>
+            <div class="mb-6 space-y-2">
+              <p class="text-sm font-bold text-slate-700">Best for:</p>
+              <ul class="text-sm text-slate-500 list-disc ml-5 space-y-1">
+                <li>Students failed from any recognized board</li>
+                <li>Students enrolling later in the academic year</li>
+              </ul>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              Students can prepare and complete 10th or 12th within the same
+              year following CBSE pattern learning.
+            </p>
+            <div
+              class="mt-auto bg-teal-50 p-4 rounded-xl italic text-teal-800 text-sm"
+            >
+              “Even if you start late, success is still possible.”
+            </div>
+          </div>
+
+          <!-- Stream 3 -->
+          <div class="stream-card p-8 bg-white rounded-3xl flex flex-col">
+            <span
+              class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4"
+              >Pass in 45 Days</span
+            >
+            <h3 class="text-2xl font-bold mb-4">
+              NIOS Stream 3 — ODES Class 10
+            </h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              For students who failed recognized boards and want faster
+              completion through the On-Demand Examination System.
+            </p>
+            <div
+              class="mt-auto bg-blue-50 p-4 rounded-xl italic text-blue-800 text-sm"
+            >
+              “Focused effort can change results quickly.”
+            </div>
+          </div>
+
+          <!-- Stream 4 -->
+          <div class="stream-card p-8 bg-white rounded-3xl flex flex-col">
+            <span
+              class="text-rose-600 font-bold text-xs uppercase tracking-widest mb-4"
+              >Pass in 45 Days</span
+            >
+            <h3 class="text-2xl font-bold mb-4">
+              NIOS Stream 4 — ODES Class 12
+            </h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              Fast-track option for senior secondary students needing quick
+              re-attempt opportunities.
+            </p>
+            <div
+              class="mt-auto bg-rose-50 p-4 rounded-xl italic text-rose-800 text-sm"
+            >
+              “Short timeline, smart preparation.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY SS COACHING IS #1 -->
+    <section
+      id="why-us"
+      class="py-24 bg-slate-900 text-white relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-purple-600/10 blur-[100px] rounded-full"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <span
+              class="text-purple-400 font-bold text-sm uppercase tracking-widest mb-4 block"
+              >Experience. Guidance. Results.</span
+            >
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+              Why SS Coaching is #1 for NIOS Admissions in Lucknow
+            </h2>
+            <p class="text-slate-400 text-lg mb-10">
+              SS Coaching has been helping students rebuild their academic
+              journey with structured guidance, expert teachers, and continuous
+              support. Our approach focuses on understanding each student’s
+              academic background and creating a realistic path toward passing
+              exams confidently.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-teal-400"></i>
+                <span class="text-sm font-medium"
+                  >Expert Coaching Since 2001</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-teal-400"></i>
+                <span class="text-sm font-medium"
+                  >Trusted NIOS Guidance Centre</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-teal-400"></i>
+                <span class="text-sm font-medium"
+                  >Online + Classroom Learning</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-teal-400"></i>
+                <span class="text-sm font-medium"
+                  >CBSE Pattern Study Material</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-teal-400"></i>
+                <span class="text-sm font-medium">Regular Mock Tests</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-teal-400"></i>
+                <span class="text-sm font-medium"
+                  >Personalized TMA Assistance</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white/5 border border-white/10 p-10 rounded-[3rem] backdrop-blur-xl"
+          >
+            <h3 class="text-2xl font-bold mb-6">Complete Assistance</h3>
+            <p class="text-slate-400 mb-8 leading-relaxed">
+              Students receive complete assistance from admission documentation
+              to exam preparation. We handle the technicalities so you can focus
+              on your studies.
+            </p>
+            <div
+              class="flex items-center gap-6 p-6 bg-white/5 rounded-2xl border border-white/5"
+            >
+              <div
+                class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center font-bold text-2xl"
+              >
+                10k+
+              </div>
+              <div>
+                <p
+                  class="font-bold text-white uppercase text-xs tracking-widest"
+                >
+                  Success Stories
+                </p>
+                <p class="text-slate-400 text-xs">
+                  Thousands of Students Guided Successfully
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL STUDENTS — SUCCESS SHOWCASE -->
+    <section id="results" class="py-24 bg-white px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-slate-900 mb-4">
+            Real Students. Real Progress.
+          </h2>
+          <div class="w-20 h-1 grad-primary mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Example 1 -->
+          <div
+            class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 text-center flex flex-col items-center"
+          >
+            <div
+              class="w-24 h-24 bg-slate-200 rounded-full mb-6 overflow-hidden"
+            >
+              <img
+                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <p
+              class="text-purple-600 font-bold text-xs tracking-widest uppercase mb-2"
+            >
+              Class 12th • 2024
+            </p>
+            <h4 class="text-3xl font-extrabold text-slate-900 mb-4">
+              76% Aggregate
+            </h4>
+            <p class="text-slate-500 text-sm italic mb-6 leading-relaxed">
+              “Passed 12th in 2024 with 76% after failing earlier — SS Coaching
+              helped me restart.”
+            </p>
+            <div
+              class="mt-auto pt-6 border-t w-full text-[10px] text-slate-400 font-bold uppercase tracking-widest"
+            >
+              Roll: 210XXX4521
+            </div>
+          </div>
+          <!-- Example 2 -->
+          <div
+            class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 text-center flex flex-col items-center transform lg:-translate-y-8 shadow-xl"
+          >
+            <div
+              class="w-24 h-24 bg-slate-200 rounded-full mb-6 overflow-hidden"
+            >
+              <img
+                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Anita"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <p
+              class="text-teal-600 font-bold text-xs tracking-widest uppercase mb-2"
+            >
+              Class 10th • 2023
+            </p>
+            <h4 class="text-3xl font-extrabold text-slate-900 mb-4">
+              82% Aggregate
+            </h4>
+            <p class="text-slate-500 text-sm italic mb-6 leading-relaxed">
+              “I lost a year but SS Coaching helped me recover. Their ODES
+              strategy is brilliant.”
+            </p>
+            <div
+              class="mt-auto pt-6 border-t w-full text-[10px] text-slate-400 font-bold uppercase tracking-widest"
+            >
+              Roll: 230XXX1109
+            </div>
+          </div>
+          <!-- Example 3 -->
+          <div
+            class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 text-center flex flex-col items-center"
+          >
+            <div
+              class="w-24 h-24 bg-slate-200 rounded-full mb-6 overflow-hidden"
+            >
+              <img
+                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mark"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <p
+              class="text-blue-600 font-bold text-xs tracking-widest uppercase mb-2"
+            >
+              Class 12th • 2024
+            </p>
+            <h4 class="text-3xl font-extrabold text-slate-900 mb-4">
+              69% Aggregate
+            </h4>
+            <p class="text-slate-500 text-sm italic mb-6 leading-relaxed">
+              “The TMA guidance was excellent. I cleared all subjects without
+              any stress.”
+            </p>
+            <div
+              class="mt-auto pt-6 border-t w-full text-[10px] text-slate-400 font-bold uppercase tracking-widest"
+            >
+              Roll: 210XXX9982
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS OF JOINING -->
+    <section class="py-24 bg-purple-600 text-white overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <h2 class="text-4xl font-bold mb-12 text-center">
+          Everything You Need to Succeed
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i
+              class="fa-solid fa-book-bookmark text-2xl mb-4 text-purple-200"
+            ></i>
+            <p class="text-xs font-bold leading-tight">
+              Proven NIOS Study Material
+            </p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i
+              class="fa-solid fa-clock-rotate-left text-2xl mb-4 text-purple-200"
+            ></i>
+            <p class="text-xs font-bold leading-tight">Previous Year Papers</p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i class="fa-solid fa-file-pen text-2xl mb-4 text-purple-200"></i>
+            <p class="text-xs font-bold leading-tight">Regular Mock Tests</p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i class="fa-solid fa-headset text-2xl mb-4 text-purple-200"></i>
+            <p class="text-xs font-bold leading-tight">
+              Personalized Doubt Sessions
+            </p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i
+              class="fa-solid fa-clipboard-check text-2xl mb-4 text-purple-200"
+            ></i>
+            <p class="text-xs font-bold leading-tight">
+              TMA Completion Guidance
+            </p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i class="fa-solid fa-flask text-2xl mb-4 text-purple-200"></i>
+            <p class="text-xs font-bold leading-tight">
+              Practical Exam Assistance
+            </p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i class="fa-solid fa-desktop text-2xl mb-4 text-purple-200"></i>
+            <p class="text-xs font-bold leading-tight">Online Class Access</p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition"
+          >
+            <i class="fa-solid fa-video text-2xl mb-4 text-purple-200"></i>
+            <p class="text-xs font-bold leading-tight">
+              Recorded Revision Lectures
+            </p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-2xl border border-white/20 text-center hover:bg-white/20 transition col-span-2 md:col-span-1"
+          >
+            <i class="fa-solid fa-chart-line text-2xl mb-4 text-purple-200"></i>
+            <p class="text-xs font-bold leading-tight">Continuous Monitoring</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO / REELS SECTION -->
+    <!-- <section class="py-24 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-slate-900 mb-4">
+            Understand the Clear Pathway to Success
+          </h2>
+          <div class="w-20 h-1 grad-teal mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="aspect-[9/16] bg-slate-900 rounded-3xl overflow-hidden relative group"
+          >
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition"
+            >
+              <i class="fa-solid fa-play text-white text-4xl"></i>
+              <iframe
+                width="315"
+                height="560"
+                src="https://www.youtube.com/embed/IETFDJfVKdE"
+                title="YouTube Shorts"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <p class="text-xs font-bold uppercase tracking-widest">
+                Best Online NIOS Center for Board Students
+              </p>
+            </div>
+          </div>
+          <div
+            class="aspect-[9/16] bg-slate-900 rounded-3xl overflow-hidden relative group"
+          >
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition"
+            >
+              <i class="fa-solid fa-play text-white text-4xl"></i>
+              <iframe
+                width="315"
+                height="560"
+                src="https://www.youtube.com/embed/-QlDTkv29Ks"
+                title="YouTube Shorts"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <p class="text-xs font-bold uppercase tracking-widest">
+                Benefits of Enrolling in #nios
+              </p>
+            </div>
+          </div>
+          <div
+            class="aspect-[9/16] bg-slate-900 rounded-3xl overflow-hidden relative group"
+          >
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition"
+            >
+              <i class="fa-solid fa-play text-white text-4xl"></i>
+              <iframe
+                width="315"
+                height="560"
+                src="https://www.youtube.com/embed/3IFqipYUm9Q"
+                title="YouTube Shorts"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <p class="text-xs font-bold uppercase tracking-widest">
+                Is NIOS Equivalent to CBSE & ISC?
+              </p>
+            </div>
+          </div>
+          <div
+            class="aspect-[9/16] bg-slate-900 rounded-3xl overflow-hidden relative group"
+          >
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition"
+            >
+              <i class="fa-solid fa-play text-white text-4xl"></i>
+              <iframe
+                width="315"
+                height="560"
+                src="https://www.youtube.com/embed/-aC2rCoWmJQ"
+                title="YouTube Shorts"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <p
+                class="text-xs font-bold uppercase tracking-widest"
+                style="color: black"
+              >
+                Failed in 9th or 11th? Pass 10th or 12th Directly Through #nios
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- TESTIMONIAL SLIDER -->
+    <section class="py-24 bg-slate-50 overflow-hidden">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">
+          Real Feedback from Our Learners
+        </h2>
+        <div
+          class="bg-white p-12 rounded-[3rem] shadow-xl relative border border-slate-100"
+        >
+          <i
+            class="fa-solid fa-quote-left text-purple-200 text-6xl absolute top-8 left-8"
+          ></i>
+          <div id="testimonial-container">
+            <p class="text-lg text-slate-700 italic leading-relaxed mb-8">
+              “After failing 11th, I lost confidence. SS Coaching helped me
+              complete 12th successfully. The teachers are very supportive and
+              the material is simple to understand.”
+            </p>
+            <h5 class="font-bold text-slate-900">Student Name</h5>
+            <p
+              class="text-xs font-bold text-purple-600 uppercase tracking-widest"
+            >
+              Class 12th Graduate
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKLIST DOWNLOAD CTA -->
+    <section class="py-24 bg-teal-600 text-white text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6">
+          Confused about documents, eligibility, streams, or admission steps?
+        </h2>
+        <p class="text-lg mb-10 opacity-90">
+          Download our Free NIOS Admission Checklist and understand: Suiting
+          streams, required documents, timelines, and common mistakes to avoid.
+        </p>
+        <button
+          onclick="toggleModal()"
+          class="bg-white text-teal-700 px-12 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition animate-pulse-soft"
+        >
+          Download Free Checklist
+        </button>
+      </div>
+    </section>
+
+    <!-- SECOND ENQUIRY FORM -->
+    <section id="contact" class="py-24 px-6 bg-white">
+      <div
+        class="max-w-4xl mx-auto bg-slate-900 rounded-[3rem] p-12 text-white relative overflow-hidden"
+      >
+        <div
+          class="absolute -top-20 -right-20 w-64 h-64 bg-purple-600/20 blur-[80px] rounded-full"
+        ></div>
+        <h2 class="text-3xl font-bold mb-8 text-center">
+          Book Free Admission Counselling
+        </h2>
+        <form class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full bg-white/10 border border-white/20 p-5 rounded-2xl outline-none focus:border-teal-400"
+            />
+            <input
+              type="tel"
+              placeholder="Mobile"
+              class="w-full bg-white/10 border border-white/20 p-5 rounded-2xl outline-none focus:border-teal-400"
+            />
+          </div>
+          <select
+            class="w-full bg-white/10 border border-white/20 p-5 rounded-2xl outline-none focus:border-teal-400 appearance-none"
+          >
+            <option class="text-slate-900">Select Category</option>
+            <option class="text-slate-900">Class 10th Admission</option>
+            <option class="text-slate-900">Class 12th Admission</option>
+            <option class="text-slate-900">ODEs 45 Days Program</option>
+          </select>
+          <button
+            class="w-full grad-teal text-white font-bold py-5 rounded-2xl shadow-xl"
+          >
+            Get Admission Guidance
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section class="py-24 px-6 bg-slate-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <h2 class="text-3xl font-bold mb-8">
+              Explore Our NIOS Coaching Centers in Lucknow
+            </h2>
+            <div class="space-y-8">
+              <div class="flex gap-6">
+                <div
+                  class="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-purple-600 flex-shrink-0"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl">SS Coaching</h4>
+                  <p class="text-slate-500 text-sm">
+                    3rd Floor, Shree Chamber, Naza Computer Market, Near Basant
+                    Cinema, Hazratganj , Lucknow
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div
+                  class="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-teal-600 flex-shrink-0"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl">+91 9839065533</h4>
+                  <p class="text-slate-500 text-sm">sscoachinglko@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div
+                  class="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-600 flex-shrink-0"
+                >
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl">Working Hours</h4>
+                  <p class="text-slate-500 text-sm">
+                    Monday – Saturday | 9 AM – 7 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-[400px] bg-slate-200 rounded-[3rem] overflow-hidden shadow-inner border-4 border-white"
+          >
+            <!-- Placeholder for Map -->
+            <div
+              class="w-full h-full flex flex-col items-center justify-center bg-slate-100 text-slate-400"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7253500909937!2d80.93862367489281!3d26.848686562840175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0a24d82e55%3A0x6bc7906fbe532c42!2sSS%20Coaching%20-%20NIOS%20Admission%20in%20Lucknow%20-%20NIOS%20Lucknow%20Center!5e0!3m2!1sen!2sin!4v1770618074051!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-slate-950 text-slate-400 py-20 px-6 border-t border-white/5"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center gap-3 mb-8">
+            <div
+              class="w-10 h-10 grad-primary rounded flex items-center justify-center text-white font-bold text-xl"
+            >
+              SS
+            </div>
+            <span class="text-white font-bold text-xl uppercase tracking-tight"
+              >SS Coaching</span
+            >
+          </div>
+          <p class="text-sm leading-relaxed">
+            Providing professional NIOS coaching and admission guidance since
+            2001. Turning failures into foundations for a brighter academic
+            future.
+          </p>
+        </div>
+        <div>
+          <h4
+            class="text-white font-bold mb-8 text-sm uppercase tracking-widest"
+          >
+            Useful Links
+          </h4>
+          <ul class="text-sm space-y-4">
+            <li>
+              <a href="#" class="hover:text-purple-400">NIOS Admissions</a>
+            </li>
+            <li><a href="#" class="hover:text-purple-400">Courses</a></li>
+            <li>
+              <a href="#" class="hover:text-purple-400">Streams Explained</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-400">Success Stories</a>
+            </li>
+            <li><a href="#" class="hover:text-purple-400">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="text-white font-bold mb-8 text-sm uppercase tracking-widest"
+          >
+            Legal Links
+          </h4>
+          <ul class="text-sm space-y-4">
+            <li>
+              <a href="#" class="hover:text-purple-400">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-400">Terms & Conditions</a>
+            </li>
+            <li><a href="#" class="hover:text-purple-400">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="text-white font-bold mb-8 text-sm uppercase tracking-widest"
+          >
+            Contact
+          </h4>
+          <ul class="text-sm space-y-4 mb-8">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-xs"></i> +91 9792111121
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-xs"></i>
+              sscoachinglko@gmail.com
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-xs mt-1"></i> 3rd Floor,
+              Shree Chamber, Naza Computer Market, Near Basant Cinema,
+              Hazratganj , LucknowLucknow, UP
+            </li>
+          </ul>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-blue-600 transition"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-pink-600 transition"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-red-600 transition"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto pt-12 mt-12 border-t border-white/5 text-center text-[10px] uppercase tracking-[0.3em]"
+      >
+        © 2026 SS Coaching Lucknow. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- MODAL FOR CHECKLIST -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-slate-950/80 z-[200] hidden flex items-center justify-center p-6 backdrop-blur-sm"
+    >
+      <div
+        class="bg-white rounded-[3rem] max-w-xl w-full p-12 relative shadow-2xl overflow-hidden"
+      >
+        <div class="absolute top-0 left-0 w-full h-2 grad-teal"></div>
+        <button
+          onclick="toggleModal()"
+          class="absolute top-8 right-8 text-slate-300 hover:text-slate-900"
+        >
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+        <h3 class="text-2xl font-bold mb-4">Download NIOS Checklist</h3>
+        <p class="text-slate-500 mb-8 text-sm">
+          Enter your details to receive the checklist covering documents, stream
+          selection, and common mistakes.
+        </p>
+        <form class="space-y-4">
+          <input
+            type="text"
+            placeholder="Full Name"
+            class="w-full bg-slate-50 border p-5 rounded-2xl outline-none focus:ring-2 focus:ring-teal-600"
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full bg-slate-50 border p-5 rounded-2xl outline-none focus:ring-2 focus:ring-teal-600"
+          />
+          <button
+            class="w-full grad-teal text-white font-bold py-5 rounded-2xl shadow-xl"
+          >
+            Download Free Checklist
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Hero Slider
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".hero-slide");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          if (i === index) slide.classList.add("active");
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      setInterval(nextSlide, 7000);
+
+      // Modal Toggle
+      function toggleModal() {
+        document.getElementById("modal").classList.toggle("hidden");
+      }
+
+      // Smooth Scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
