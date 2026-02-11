@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
 
@@ -19,6 +20,12 @@
 
       .grad-primary {
         background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+      }
+      .studentsBar{
+        img{
+          
+          object-fit: cover;
+        }
       }
       .grad-teal {
         background: linear-gradient(135deg, #0d9488 0%, #2563eb 100%);
@@ -284,7 +291,7 @@
     </section>
 
     <!-- H1 Header Content -->
-    <section class="py-16 bg-white border-b">
+    <section id="niosAdmissions" class="py-16 bg-white border-b">
       <div class="max-w-7xl mx-auto px-6 text-center">
         <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
           NIOS Admissions Made Simple — Pass 10th & 12th with Confidence
@@ -491,7 +498,7 @@
               class="text-purple-400 font-bold text-sm uppercase tracking-widest mb-4 block"
               >Experience. Guidance. Results.</span
             >
-            <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight" style="line-height: 1.3; font-family: sans-serif;">
               Why SS Coaching is #1 for NIOS Admissions in Lucknow
             </h2>
             <p class="text-slate-400 text-lg mb-10">
@@ -584,8 +591,8 @@
         <div class="relative -mx-6 px-6">
           <div
             id="students-scroll-container"
-            class="flex gap-8 overflow-x-auto pb-6 scroll-smooth px-4"
-            style="scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: #d1d5db #f3f4f6;"
+            class="flex gap-8 overflow-x-auto pb-6 scroll-smooth px-4 studentsBar"
+            style="scroll-behavior: smooth; scrollbar-width: thin;  scrollbar-color: #d1d5db #f3f4f6;"
           >
             <!-- Student cards will be populated by JavaScript -->
           </div>
@@ -678,7 +685,7 @@
     </section>
 
     <!-- VIDEO / REELS SECTION -->
-    <section class="py-24 px-6 bg-white">
+    <section class="py-24 px-6 bg-white" id="clearPath">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-slate-900 mb-4">
@@ -1022,7 +1029,7 @@
         </div>
     </section>
     <!-- CHECKLIST DOWNLOAD CTA -->
-    <section class="py-24 bg-teal-600 text-white text-center">
+    <section class="py-24 bg-teal-600 text-white text-center" id="enquirySect">
       <div class="max-w-4xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-6">
           Confused about documents, eligibility, streams, or admission steps?
@@ -1138,15 +1145,8 @@
             <div
               class="w-full h-full flex flex-col items-center justify-center bg-slate-100 text-slate-400"
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7253500909937!2d80.93862367489281!3d26.848686562840175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0a24d82e55%3A0x6bc7906fbe532c42!2sSS%20Coaching%20-%20NIOS%20Admission%20in%20Lucknow%20-%20NIOS%20Lucknow%20Center!5e0!3m2!1sen!2sin!4v1770618074051!5m2!1sen!2sin"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7119.449792088088!2d80.94122!3d26.848701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0a24d82e55%3A0x6bc7906fbe532c42!2sSS%20Coaching%20-%20NIOS%20Admission%20in%20Lucknow%20-%20NIOS%20Lucknow%20Center!5e0!3m2!1sen!2sin!4v1770801351133!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
           </div>
         </div>
@@ -1193,16 +1193,16 @@
           </h4>
           <ul class="text-sm space-y-4">
             <li>
-              <a href="#" class="hover:text-purple-400">NIOS Admissions</a>
+              <a href="https://sscoaching.in/nios-admission/admission-in-nios-stream-1" target="_blank" class="hover:text-purple-400">NIOS Admissions</a>
             </li>
-            <li><a href="#" class="hover:text-purple-400">Courses</a></li>
+            <li><a href="#streams" class="hover:text-purple-400">Courses</a></li>
             <li>
-              <a href="#" class="hover:text-purple-400">Streams Explained</a>
+              <a href="#clearPath" class="hover:text-purple-400">Streams Explained</a>
             </li>
             <li>
-              <a href="#" class="hover:text-purple-400">Success Stories</a>
+              <a href="#results" class="hover:text-purple-400">Success Stories</a>
             </li>
-            <li><a href="#" class="hover:text-purple-400">FAQ</a></li>
+            <li><a href="https://sscoaching.in/faq" target="_blank" class="hover:text-purple-400">FAQ</a></li>
           </ul>
         </div>
         <div>
@@ -1310,80 +1310,7 @@
     </div>
 
     <script>
-       // Testimonials Data
-      // const reviews = [
-      //   {
-      //     text: "After failing 11th, I lost all my confidence. SS Coaching helped me navigate the NIOS system and I completed my 12th with 78%. The teachers are incredibly supportive!",
-      //     author: "Ananya Sharma",
-      //     meta: "Class 12th • 2023 Batch"
-      //   },
-      //   {
-      //     text: "I wanted to focus on JEE prep while finishing 12th. SS Coaching's flexible schedule and excellent study material made it possible. Highly recommended for board aspirants.",
-      //     author: "Rahul Verma",
-      //     meta: "Class 12th • PCM Student"
-      //   },
-      //   {
-      //     text: "The best NIOS center in Lucknow. They handled my admission documentation perfectly and provided regular mock tests that helped me score 82% in 10th boards.",
-      //     author: "Priya Singh",
-      //     meta: "Class 10th • 2022 Batch"
-      //   }
-      // ];
-
-      // let currentReview = 0;
-
-      // function updateReview() {
-      //   const container = document.getElementById('testimonial-content');
-      //   const textEl = document.getElementById('review-text');
-      //   const authorEl = document.getElementById('review-author');
-      //   const metaEl = document.getElementById('review-meta');
-
-      //   container.style.opacity = 0;
-        
-      //   setTimeout(() => {
-      //     const item = reviews[currentReview];
-      //     textEl.innerText = `"${item.text}"`;
-      //     authorEl.innerText = item.author;
-      //     metaEl.innerText = item.meta;
-      //     container.style.opacity = 1;
-      //   }, 300);
-      // }
-
-      // function nextReview() {
-      //   currentReview = (currentReview + 1) % reviews.length;
-      //   updateReview();
-      // }
-
-      // function prevReview() {
-      //   currentReview = (currentReview - 1 + reviews.length) % reviews.length;
-      //   updateReview();
-      // }
-
-      // // Auto cycle reviews
-      // setInterval(nextReview, 6000);
-
-      // // Student Success Gallery
-      // const studentGallery = [
-      //   { name: "Sameer", score: "84%", class: "12th" },
-      //   { name: "Ishita", score: "79%", class: "12th" },
-      //   { name: "Karan", score: "88%", class: "10th" },
-      //   { name: "Aditi", score: "76%", class: "12th" },
-      //   { name: "Vikram", score: "81%", class: "10th" }
-      // ];
-
-      // const scrollContainer = document.getElementById('students-scroll-container');
-      // studentGallery.forEach(s => {
-      //   const card = document.createElement('div');
-      //   card.className = "min-w-[280px] bg-slate-50 border p-6 rounded-3xl snap-center text-center";
-      //   card.innerHTML = `
-      //       <div class="w-20 h-20 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-      //           <i class="fa-solid fa-user-graduate text-3xl text-purple-600"></i>
-      //       </div>
-      //       <h4 class="font-bold text-lg">${s.name}</h4>
-      //       <p class="text-purple-600 font-black text-2xl my-2">${s.score}</p>
-      //       <p class="text-slate-500 text-sm">Class ${s.class} NIOS</p>
-      //   `;
-      //   scrollContainer.appendChild(card);
-      // });
+      
  window.addEventListener('load', () => {
             const track = document.getElementById('reviewTrack');
             const originalCards = Array.from(track.children);
@@ -1443,7 +1370,7 @@
         const bgColor = colorMap[student.color];
 
         return `
-          <div class="flex-shrink-0 w-[420px] h-96 rounded-[2.5rem] border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow relative group">
+          <div class="flex-shrink-0 w-[350px] h-96 rounded-[2.5rem] border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow relative group">
             <!-- Background Image -->
             <div class="absolute inset-0 w-full h-full">
               <img src=${student.avatar} class="w-full h-full object-cover" />
