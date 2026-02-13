@@ -298,10 +298,11 @@
         </div>
       </div>
     </aside>
+
     <!-- HERO BANNER (4 MOTIVATIONAL PANELS) -->
-    <section id="home" class="relative h-[85vh] bg-slate-950 overflow-hidden">
+    <!-- <section id="home" class="relative h-[85vh] bg-slate-950 overflow-hidden">
       <div id="hero-slider" class="h-full w-full">
-        <!-- Banner 1 — Hope -->
+        Banner 1 — Hope
         <div class="hero-slide active">
           <img
             src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80"
@@ -326,7 +327,7 @@
             </div>
           </div>
         </div>
-        <!-- Banner 2 — Motivation -->
+        Banner 2 — Motivation
         <div class="hero-slide">
           <img
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80"
@@ -350,7 +351,7 @@
             </div>
           </div>
         </div>
-        <!-- Banner 3 — Understanding -->
+        Banner 3 — Understanding
         <div class="hero-slide">
           <img
             src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147503633/images/22af86c-42bc-03d2-6141-0b8b1fb4b60_AdobeStock_104938952.jpeg"
@@ -375,7 +376,7 @@
             </div>
           </div>
         </div>
-        <!-- Banner 4 — Trust -->
+        Banner 4 — Trust
         <div class="hero-slide">
           <img
             src="https://t4.ftcdn.net/jpg/02/45/82/73/360_F_245827337_LW3QmhITvTqNrssxY1uo0arYl6rag6ns.jpg"
@@ -402,7 +403,7 @@
         </div>
       </div>
 
-      <!-- Slider Controls -->
+      Slider Controls
       <div class="absolute bottom-10 right-10 z-30 flex gap-4">
         <button
           onclick="prevSlide()"
@@ -413,6 +414,222 @@
         <button
           onclick="nextSlide()"
           class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section> -->
+    <!-- HERO SECTION WITH INTEGRATED FORM & ORIGINAL SLIDER -->
+    <section
+      id="home"
+      class="relative min-h-[90vh] lg:h-[85vh] bg-slate-950 overflow-hidden"
+    >
+      <!-- SLIDER CONTENT (Backgrounds and Text) -->
+      <div id="hero-slider" class="absolute inset-0 w-full h-full">
+        <!-- Banner 1 — Hope -->
+        <div class="hero-slide active">
+          <img
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80"
+            class="absolute inset-0 w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div
+              class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center"
+            >
+              <div class="lg:col-span-7 text-white">
+                <span
+                  class="inline-block bg-purple-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                  >Hope</span
+                >
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                  “Failure is not the end — it’s the
+                  <span class="text-purple-400">beginning</span> of a better
+                  path.”
+                </h2>
+                <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                  We help students restart education with clarity and
+                  confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner 2 — Motivation -->
+        <div class="hero-slide">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80"
+            class="absolute inset-0 w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div
+              class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center"
+            >
+              <div class="lg:col-span-7 text-white">
+                <span
+                  class="inline-block bg-teal-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                  >Motivation</span
+                >
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                  “Your year is not lost — your
+                  <span class="text-teal-400">direction</span> just changed.”
+                </h2>
+                <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                  Choose the right NIOS stream and move forward faster.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner 3 — Understanding -->
+        <div class="hero-slide">
+          <img
+            src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147503633/images/22af86c-42bc-03d2-6141-0b8b1fb4b60_AdobeStock_104938952.jpeg"
+            class="absolute inset-0 w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div
+              class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center"
+            >
+              <div class="lg:col-span-7 text-white">
+                <span
+                  class="inline-block bg-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                  >Understanding</span
+                >
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                  “We understand your
+                  <span class="text-blue-400">situation</span> — and guide you
+                  step by step.”
+                </h2>
+                <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                  Personal assistance from admission to exam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner 4 — Trust -->
+        <div class="hero-slide">
+          <img
+            src="https://t4.ftcdn.net/jpg/02/45/82/73/360_F_245827337_LW3QmhITvTqNrssxY1uo0arYl6rag6ns.jpg"
+            class="absolute inset-0 w-full h-full object-cover opacity-40"
+          />
+          <div class="absolute inset-0 flex items-center px-6">
+            <div
+              class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center"
+            >
+              <div class="lg:col-span-7 text-white">
+                <span
+                  class="inline-block bg-rose-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
+                  >Trust</span
+                >
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                  “Trusted NIOS Coaching with
+                  <span class="text-rose-400">Online & Offline</span> Support.”
+                </h2>
+                <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
+                  Experienced guidance and real student results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIXED ENQUIRY FORM (Stay on top of slider) -->
+      <div
+        class="relative z-30 max-w-7xl mx-auto px-6 w-full h-full pointer-events-none"
+      >
+        <div
+          class="grid lg:grid-cols-12 gap-12 items-center h-full py-12 lg:py-0"
+        >
+          <!-- Spacer for left content -->
+          <div class="lg:col-span-7 hidden lg:block"></div>
+
+          <!-- Form Container -->
+          <div class="lg:col-span-5 pointer-events-auto mt-20 lg:mt-0">
+            <div
+              class="bg-white rounded-2xl shadow-2xl p-8 border border-white/20"
+            >
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">
+                Confused About NIOS Streams?
+              </h3>
+              <p class="text-slate-500 text-sm mb-6">
+                Get free counselling to complete your 10th or 12th.
+              </p>
+
+              <form class="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Student Name"
+                  class="w-full px-4 py-3 rounded-lg border border-slate-200 outline-none focus:ring-2 focus:ring-blue-200 transition"
+                  required
+                />
+                <input
+                  type="tel"
+                  placeholder="Mobile Number"
+                  class="w-full px-4 py-3 rounded-lg border border-slate-200 outline-none focus:ring-2 focus:ring-blue-200 transition"
+                  required
+                />
+                <select
+                  name="Failed/Dropped Out From"
+                  class="w-full px-4 py-3 rounded-lg border border-slate-200 outline-none transition text-slate-600 bg-white"
+                >
+                  <option value="" disabled selected>
+                    Failed/Dropped Out From
+                  </option>
+                  <option value="8th">Class 8th</option>
+                  <option value="10th">Class 9th</option>
+                  <option value="10th">Class 10th</option>
+                  <option value="11th">Class 11th</option>
+                  <option value="12th">Class 12th</option>
+                </select>
+                <select
+                  name="Applied for"
+                  class="w-full px-4 py-3 rounded-lg border border-slate-200 outline-none transition text-slate-600 bg-white"
+                >
+                  <option disabled selected>Applied for</option>
+                  <option value="NIOS 10th Admission">
+                    NIOS 10th Admission
+                  </option>
+                  <option value="NIOS 12th Admission">
+                    NIOS 12th Admission
+                  </option>
+                  <option value="Save Academic Year">Save Academic Year</option>
+                  <option value="Improve Marks">Improve Marks</option>
+                  <option value="ODES ( Fast Track )">
+                    ODES ( Fast Track )
+                  </option>
+                  <option value="Need Counselling">Need Counselling</option>
+                </select>
+                <a href="#contact">
+                  <button
+                    style="margin-top: 10px"
+                    type="button"
+                    class="w-full grad-primary text-white font-bold py-4 rounded-lg shadow-lg hover:scale-[1.02] transition-transform"
+                  >
+                    Request Free Counselling
+                  </button></a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDER CONTROLS (Original) -->
+      <div class="absolute bottom-10 left-6 lg:left-10 z-40 flex gap-4">
+        <button
+          onclick="prevSlide()"
+          class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          onclick="nextSlide()"
+          class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition"
         >
           <i class="fa-solid fa-chevron-right"></i>
         </button>
