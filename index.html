@@ -18,6 +18,31 @@
         font-family: "Plus Jakarta Sans", sans-serif;
         scroll-behavior: smooth;
       }
+              @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        .location-container {
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none; /* Firefox */
+        }
+        .location-container::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+        .location-card {
+            scroll-snap-align: start;
+            flex: 0 0 100%;
+        }
+
+        .tab-active {
+            background: #4f46e5;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4);
+        }
+
+        .map-frame {
+            transition: opacity 0.3s ease;
+        }
       /* Floating Label Styles for Dark Background */
         .floating-contact-group {
             position: relative;
@@ -1047,7 +1072,7 @@
                         <!-- Name Input -->
                         <div class="floating-group">
                             <input type="text" id="student_name" name="name" placeholder=" " required>
-                            <label for="student_name">Student Name</label>
+                            <label for="student_name">*Student Name</label>
                         </div>
 
                         <!-- Mobile Input -->
@@ -1060,7 +1085,7 @@
                         <div class="floating-group">
                             <select name="Failed/Dropped Out From" id="dropout_select" required>
                                 <option value="" disabled selected hidden></option>
-                                <option value="8th">Class 8th</option>
+                                
                                 <option value="9th">Class 9th</option>
                                 <option value="10th">Class 10th</option>
                                 <option value="11th">Class 11th</option>
@@ -2712,7 +2737,123 @@
       </div>
     </section>
     <!-- LOCATION SECTION -->
-    <section
+     
+    <section id="locations" class="py-24 px-6 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Section Header & Branch Switcher -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-indigo-600 font-bold tracking-widest uppercase text-sm mb-2">Our Presence</h2>
+                    <h3 class="text-4xl font-extrabold text-slate-900"> Our Branches</h3>
+                </div>
+                
+                <!-- Tab Controls -->
+                <div class="flex p-1 bg-slate-200/50 rounded-2xl w-fit">
+                    <button onclick="scrollToBranch(0)" class="branch-tab tab-active px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300">Hazratganj</button>
+                    <button onclick="scrollToBranch(1)" class="branch-tab px-6 py-3 rounded-xl font-bold text-sm text-slate-600 transition-all duration-300">Indira Nagar</button>
+                    <button onclick="scrollToBranch(2)" class="branch-tab px-6 py-3 rounded-xl font-bold text-sm text-slate-600 transition-all duration-300">Alambagh</button>
+                </div>
+            </div>
+
+            <!-- Swipeable Container -->
+            <div id="locationSlider" class="location-container flex overflow-x-auto gap-0 transition-all duration-500 ease-in-out">
+                
+                <!-- Branch 1: Hazratganj -->
+                <div class="location-card">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center bg-white p-8 md:p-12 rounded-[3rem] shadow-xl border border-slate-100 mx-2">
+                        <div class="space-y-8">
+                            <h2 class="text-3xl font-bold text-slate-900 leading-tight">
+                                Explore our NIOS Coaching Center in <span class="text-indigo-600">Hazratganj</span>
+                            </h2>
+                            <div class="space-y-6">
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 flex-shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div><h4 class="font-bold text-xl">SS Coaching</h4><p class="text-slate-500 text-sm">3rd Floor, Shree Chamber, Naza Computer Market, Near Basant Cinema, Hazratganj, Lucknow</p></div>
+                                </div>
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-600 flex-shrink-0"><i class="fa-solid fa-phone"></i></div>
+                                    <div><h4 class="font-bold text-xl">+91 9839065533</h4><p class="text-slate-500 text-sm">sscoachinglko@gmail.com</p></div>
+                                </div>
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 flex-shrink-0"><i class="fa-solid fa-clock"></i></div>
+                                    <div><h4 class="font-bold text-xl">Working Hours</h4><p class="text-slate-500 text-sm">Monday – Saturday | 9 AM – 7 PM</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-[400px] rounded-[2.5rem] overflow-hidden shadow-inner border-4 border-slate-50 relative group">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7253500909937!2d80.93862367489281!3d26.848686562840175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0a24d82e55%3A0x6bc7906fbe532c42!2sSS%20Coaching%20-%20NIOS%20Admission%20in%20Lucknow%20-%20NIOS%20Lucknow%20Center!5e0!3m2!1sen!2sin!4v1771062980328!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch 2: Indira Nagar -->
+                <div class="location-card">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center bg-white p-8 md:p-12 rounded-[3rem] shadow-xl border border-slate-100 mx-2">
+                        <div class="space-y-8">
+                            <h2 class="text-3xl font-bold text-slate-900 leading-tight">
+                                Explore our NIOS Coaching Center in <span class="text-indigo-600">Indira Nagar</span>
+                            </h2>
+                            <div class="space-y-6">
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 flex-shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div><h4 class="font-bold text-xl">SS Coaching</h4><p class="text-slate-500 text-sm">Infront Babian Restaurant, S97, 3rd Floor, Lekhraj Palace, Indira Nagar, Lucknow</p></div>
+                                </div>
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-600 flex-shrink-0"><i class="fa-solid fa-phone"></i></div>
+                                    <div><h4 class="font-bold text-xl">+91 9792111121</h4><p class="text-slate-500 text-sm">sscoachinglko@gmail.com</p></div>
+                                </div>
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 flex-shrink-0"><i class="fa-solid fa-clock"></i></div>
+                                    <div><h4 class="font-bold text-xl">Working Hours</h4><p class="text-slate-500 text-sm">Monday – Saturday | 9 AM – 7 PM</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-[400px] rounded-[2.5rem] overflow-hidden shadow-inner border-4 border-slate-50">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.932994725854!2d80.9791527748937!3d26.873869861759704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd5205c271a1%3A0x199b07e93a25f58a!2sSS%20Coaching!5e0!3m2!1sen!2sin!4v1770975044279!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch 3: Alambagh -->
+                <div class="location-card">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center bg-white p-8 md:p-12 rounded-[3rem] shadow-xl border border-slate-100 mx-2">
+                        <div class="space-y-8">
+                            <h2 class="text-3xl font-bold text-slate-900 leading-tight">
+                                Explore our NIOS Coaching Center in <span class="text-indigo-600">Alambagh</span>
+                            </h2>
+                            <div class="space-y-6">
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 flex-shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div><h4 class="font-bold text-xl">SS Coaching</h4><p class="text-slate-500 text-sm">U.R Plaza, Near Phoenix Mall, Sector B, Bargawan, Alambagh, Lucknow</p></div>
+                                </div>
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-600 flex-shrink-0"><i class="fa-solid fa-phone"></i></div>
+                                    <div><h4 class="font-bold text-xl">+91 9935035316</h4><p class="text-slate-500 text-sm">sscoachinglko@gmail.com</p></div>
+                                </div>
+                                <div class="flex gap-6">
+                                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 flex-shrink-0"><i class="fa-solid fa-clock"></i></div>
+                                    <div><h4 class="font-bold text-xl">Working Hours</h4><p class="text-slate-500 text-sm">Monday – Saturday | 9 AM – 7 PM</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-[400px] rounded-[2.5rem] overflow-hidden shadow-inner border-4 border-slate-50">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.298151978782!2d80.89391847489105!3d26.798633564984804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfc02a92953f5%3A0x1f17e52b44da80a4!2sSS%20Coaching%20%E2%80%93%20NIOS%20Admission%20%26%20Study%20Centre%20in%20Lucknow%20%7C%20NIOS%20Lucknow%20Center%20of%20Failed%20Students!5e0!3m2!1sen!2sin!4v1770975260893!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Hints -->
+            <div class="flex justify-center mt-12 gap-3 md:hidden">
+                <div class="w-2 h-2 rounded-full bg-indigo-600 opacity-100"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-300 opacity-50"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-300 opacity-50"></div>
+            </div>
+        </div>
+    </section>
+    <!-- <section
       class="py-24 px-6 bg-slate-50"
       style="box-shadow: 0 0px 10px black"
     >
@@ -2769,7 +2910,7 @@
             <div
               class="w-full h-full flex flex-col items-center justify-center bg-slate-100 text-slate-400"
             >
-              <!-- <iframe
+               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7253500909937!2d80.93862367489281!3d26.848686562840175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0a24d82e55%3A0x6bc7906fbe532c42!2sSS%20Coaching%20-%20NIOS%20Admission%20in%20Lucknow%20-%20NIOS%20Lucknow%20Center!5e0!3m2!1sen!2sin!4v1771062980328!5m2!1sen!2sin"
                 width="800"
                 height="600"
@@ -2778,7 +2919,7 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe> -->
-              <iframe
+              <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7253500909937!2d80.93862367489281!3d26.848686562840175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0a24d82e55%3A0x6bc7906fbe532c42!2sSS%20Coaching%20-%20NIOS%20Admission%20in%20Lucknow%20-%20NIOS%20Lucknow%20Center!5e0!3m2!1sen!2sin!4v1771062980328!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
@@ -2787,13 +2928,13 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               >
-              </iframe>
-            </div>
+              </iframe> -->
+            <!-- </div>
           </div>
         </div>
       </div>
-    </section>
-    <section
+    </section> -->
+    <!-- <section
       class="py-24 px-6 bg-slate-50"
       style="box-shadow: 0 0px 10px black"
     >
@@ -2937,7 +3078,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --> 
 
     <!--FOOTER -->
     <footer
@@ -3702,6 +3843,44 @@
           history.pushState(null, null, id);
         });
       });
+    </script>
+    <script>
+        const slider = document.getElementById('locationSlider');
+        const tabs = document.querySelectorAll('.branch-tab');
+        const indicators = document.querySelectorAll('.rounded-full.bg-indigo-600, .rounded-full.bg-slate-300');
+
+        function scrollToBranch(index) {
+            const cardWidth = slider.offsetWidth;
+            slider.scrollTo({
+                left: cardWidth * index,
+                behavior: 'smooth'
+            });
+            updateUI(index);
+        }
+
+        function updateUI(index) {
+            // Update Tabs
+            tabs.forEach((tab, i) => {
+                if(i === index) {
+                    tab.classList.add('tab-active');
+                    tab.classList.remove('text-slate-600');
+                } else {
+                    tab.classList.remove('tab-active');
+                    tab.classList.add('text-slate-600');
+                }
+            });
+
+            // Update Indicators (Mobile dots)
+            indicators.forEach((dot, i) => {
+                dot.className = i === index ? 'w-2 h-2 rounded-full bg-indigo-600 opacity-100' : 'w-2 h-2 rounded-full bg-slate-300 opacity-50';
+            });
+        }
+
+        // Listen for scroll to sync tabs (for swiping)
+        slider.addEventListener('scroll', () => {
+            const index = Math.round(slider.scrollLeft / slider.offsetWidth);
+            updateUI(index);
+        });
     </script>
   </body>
 </html>
