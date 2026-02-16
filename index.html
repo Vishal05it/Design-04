@@ -964,7 +964,7 @@
         </div>
       </div> -->
        <!-- HERO SECTION WITH FLOATING LABELS -->
-        <div class="relative z-30 max-w-7xl mx-auto w-full h-full pointer-events-none">
+        <!-- <div class="relative z-30 max-w-7xl mx-auto w-full h-full pointer-events-none">
             <div class="grid lg:grid-cols-12 gap-12 items-center h-full py-12 lg:py-0">
                 <div class="lg:col-span-7 hidden lg:block"></div>
 
@@ -975,19 +975,19 @@
 
                         <form class="space-y-4" onsubmit="event.preventDefault(); console.log('Form submitted');">
                             
-                            <!-- Name Input -->
+                            
                             <div class="floating-group">
                                 <input type="text" id="student_name" name="name" placeholder=" " required>
                                 <label for="student_name">Student Name</label>
                             </div>
 
-                            <!-- Mobile Input -->
+                           
                             <div class="floating-group">
                                 <input type="tel" id="mobile_number" name="mobile-number" placeholder=" " required>
                                 <label for="mobile_number">*Mobile Number</label>
                             </div>
 
-                            <!-- Failed From Select -->
+                            
                             <div class="floating-group">
                                 <select name="Failed/Dropped Out From" id="dropout_select" required>
                                     <option value="" disabled selected hidden></option>
@@ -1000,7 +1000,7 @@
                                 <label for="dropout_select">Failed/Dropped Out From</label>
                             </div>
 
-                            <!-- Applied For Select -->
+                           
                             <div class="floating-group">
                                 <select name="Applied for" id="applied_select" required>
                                     <option value="" disabled selected hidden></option>
@@ -1021,7 +1021,76 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="relative z-30 max-w-7xl mx-auto w-full h-full pointer-events-none">
+        <div class="grid lg:grid-cols-12 gap-12 items-center h-full py-12 lg:py-0">
+            <div class="lg:col-span-7 hidden lg:block"></div>
+
+            <!-- Form Container -->
+            <div class="lg:col-span-5 pointer-events-auto mt-20 lg:mt-0 transition-all duration-300" id="heroForm">
+                <div class="bg-white rounded-2xl shadow-2xl p-8 border border-white/20 relative">
+                    
+                    <!-- Close Icon (Mobile Only) -->
+                    <button 
+                        onclick="document.getElementById('heroForm').style.display = 'none'"
+                        class="lg:hidden absolute -top-4 -right-4 w-10 h-10 bg-white shadow-lg border border-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:text-red-500 transition-colors z-50 pointer-events-auto"
+                        aria-label="Close form"
+                    >
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Confused About NIOS Streams?</h3>
+                    <p class="text-slate-500 text-sm mb-6">Get free counselling to complete your 10th or 12th.</p>
+
+                    <form class="space-y-4" onsubmit="event.preventDefault(); console.log('Form submitted');">
+                        
+                        <!-- Name Input -->
+                        <div class="floating-group">
+                            <input type="text" id="student_name" name="name" placeholder=" " required>
+                            <label for="student_name">Student Name</label>
+                        </div>
+
+                        <!-- Mobile Input -->
+                        <div class="floating-group">
+                            <input type="tel" id="mobile_number" name="mobile-number" placeholder=" " required>
+                            <label for="mobile_number">*Mobile Number</label>
+                        </div>
+
+                        <!-- Failed From Select -->
+                        <div class="floating-group">
+                            <select name="Failed/Dropped Out From" id="dropout_select" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="8th">Class 8th</option>
+                                <option value="9th">Class 9th</option>
+                                <option value="10th">Class 10th</option>
+                                <option value="11th">Class 11th</option>
+                                <option value="12th">Class 12th</option>
+                            </select>
+                            <label for="dropout_select">Failed/Dropped Out From</label>
+                        </div>
+
+                        <!-- Applied For Select -->
+                        <div class="floating-group">
+                            <select name="Applied for" id="applied_select" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="NIOS 10th Admission">NIOS 10th Admission</option>
+                                <option value="NIOS 12th Admission">NIOS 12th Admission</option>
+                                <option value="Save Academic Year">Save Academic Year</option>
+                                <option value="Improve Marks">Improve Marks</option>
+                                <option value="ODES ( Fast Track )">ODES ( Fast Track )</option>
+                                <option value="Need Counselling">Need Counselling</option>
+                            </select>
+                            <label for="applied_select">Applied for</label>
+                        </div>
+
+                        <button type="submit" class="w-full grad-primary text-white font-bold py-4 rounded-lg shadow-lg hover:scale-[1.02] transition-transform" style="margin-top: 10px">
+                            Request Free Counselling
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
       <!-- SLIDER CONTROLS (Original) -->
